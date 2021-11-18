@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="X[5303] <= 0.055\nentropy = 0.967\nsamples = 2286\nvalue = [901, 1385]\nclass = Real"] ;
+1 [label="X[5324] <= 0.087\nentropy = 0.753\nsamples = 782\nvalue = [169, 613]\nclass = Real"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="X[5303] <= 0.05\nentropy = 0.502\nsamples = 633\nvalue = [70, 563]\nclass = Real"] ;
+1 -> 2 ;
+3 [label="(...)"] ;
+2 -> 3 ;
+30 [label="(...)"] ;
+2 -> 30 ;
+123 [label="X[5697] <= 0.198\nentropy = 0.921\nsamples = 149\nvalue = [99, 50]\nclass = Fake"] ;
+1 -> 123 ;
+124 [label="(...)"] ;
+123 -> 124 ;
+201 [label="(...)"] ;
+123 -> 201 ;
+204 [label="X[2405] <= 0.069\nentropy = 0.999\nsamples = 1504\nvalue = [732, 772]\nclass = Real"] ;
+0 -> 204 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+205 [label="X[5143] <= 0.051\nentropy = 1.0\nsamples = 1429\nvalue = [722, 707]\nclass = Fake"] ;
+204 -> 205 ;
+206 [label="(...)"] ;
+205 -> 206 ;
+581 [label="(...)"] ;
+205 -> 581 ;
+664 [label="X[995] <= 0.2\nentropy = 0.567\nsamples = 75\nvalue = [10, 65]\nclass = Real"] ;
+204 -> 664 ;
+665 [label="(...)"] ;
+664 -> 665 ;
+666 [label="(...)"] ;
+664 -> 666 ;
+}
